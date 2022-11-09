@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "The Hunger Games (The Hunger Games, #1)",
+    "author": "by Suzanne Collins",
+    "avg_rating": 4.32,
+    "ratings": 7632659
+  },
+  {
+    "id": 2,
+    "name": "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
+    "author": "by J.K. Rowling",
+    "avg_rating": 4.5,
+    "ratings": 3029079
+  },
+  {
+    "id": 3,
+    "name": "Pride and Prejudice",
+    "author": "by Jane Austen",
+    "avg_rating": 4.28,
+    "ratings": 3758542
+  },
+  {
+    "id": 4,
+    "name": "To Kill a Mockingbird",
+    "author": "by Harper Lee",
+    "avg_rating": 4.27,
+    "ratings": 5458728
+  },
+  {
+    "id": 5,
+    "name": "The Book Thief",
+    "author": "by Markus Zusak",
+    "avg_rating": 4.39,
+    "ratings": 2260235
+  }
+]

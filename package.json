@@ -1,0 +1,12 @@
+{
+  "name": "books_directory",
+  "version": "1.0.0",
+  "description": "books directory - nodejs study",
+  "main": "index.js",
+  "repository": "https://github.com/michellehorn/books_directory.git",
+  "author": "Michelle Horn",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
