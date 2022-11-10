@@ -54,4 +54,26 @@ router.post('/', (req, res) => {
   res.json(response);
 });
 
+router.put('/:id', (req, res) => {
+  const { name, author } = req.body;
+  const { id } = req.params;
+  let books_list = books;
+  books_list = books_list.map((book) =>
+    book.id === parseInt(id)
+      ? {
+          id: book.id,
+          name: name,
+          author: author
+        }
+      : book
+  );
+
+  const response = {
+    data: books_list,
+    message: 'Book updated successfully!'
+  };
+
+  res.json(response);
+});
+
 module.exports = router;
