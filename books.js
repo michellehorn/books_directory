@@ -32,4 +32,26 @@ router.delete('/:id', (req, res) => {
   res.json(response);
 });
 
+router.post('/', (req, res) => {
+  const { name, author } = req.body;
+  let errk = [];
+  if (name === undefined) errk.push('name');
+  if (author === undefined) errk.push('author');
+
+  if (errk.length > 0) res.json(`Field(s) missing: ${errk.join(', ')}`);
+  let books_list = books;
+  books_list.push({
+    id: books.length + 1,
+    name: name,
+    author: author
+  });
+
+  const response = {
+    data: books_list,
+    message: 'Book added successfully!'
+  };
+
+  res.json(response);
+});
+
 module.exports = router;
