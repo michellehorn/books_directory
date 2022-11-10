@@ -22,5 +22,14 @@ router.post('/search', function (req, res) {
   return res.json(books_filtered);
 });
 
-module.exports = router;
+router.delete('/:id', (req, res) => {
+  const { id } = req.params;
+  const books_filtered = books.filter((book) => book.id !== parseInt(id));
+  const response = {
+    data: books_filtered,
+    message: `Book with id #${id} has been deleted`
+  };
+  res.json(response);
+});
 
+module.exports = router;
